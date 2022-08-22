@@ -2,13 +2,58 @@
 
 body {
     font-family: "Computer Modern Serif", serif;
-    padding-left: 30%;
-    padding-right: 30%;
-    padding-top: 5%;
     font-size: 150%;
+    bottom: 25px;
 }
 
 a {
-    color: rgb(74, 103, 162);
     text-decoration: none;
+}
+
+@media screen and (min-width: 900px) {
+    body {
+        padding-left: 30%;
+        padding-right: 30%;
+        padding-top: 5%;
+    }
+
+    .title {
+        font-size: 150%;
+    }    
+}
+
+@media screen and (max-width: 900px) {
+    .title {
+        font-size: 75%;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: white;
+        background-color: #1a1b1d;
+    }
+
+    a {
+        color: rgb(103, 154, 255);
+    }
+
+    .muted {
+        color: rgb(108, 108, 108);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        color: black;
+        background-color: white;
+    }
+
+    a {
+        color: rgb(74, 103, 162);
+    }
+
+    .muted {
+        color: gainsboro;
+    }
 }
