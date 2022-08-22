@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {{ partial "head.html"}}
+</head>
+
+<body>
+    <h1>{{ .Title }}</h1>
+    {{ range .Pages }}
+    <li>
+        <a href="{{.Permalink}}">{{.Date.Format "02/01/2006"}} | {{.Title}}</a>
+    </li>
+    {{ end }}
+</body>
+
+</html>

@@ -7,8 +7,19 @@
 
 <body>
     <h1>{{ partial "title.html" }}</h1>
-    Programmer, proud Rust, C/C++ and Python3.x developer. Enjoy systems programming, programming language design,
-    philosophy and cooking. Open for job invitations.
+    <p>Programmer, proud Rust, C/C++ and Python3.x developer. Enjoy systems programming, programming language design,
+        philosophy and cooking. Open for job invitations.</p>
+
+    {{ range .Site.RegularPages }}
+    <li>
+        <a href="{{.Permalink}}">{{.Date.Format "02/01/2006"}} | {{.Title}}</a>
+    </li>
+    {{ end }}
+    </ul>
+
+    <p>
+        {{ partial "contacts.html" }}
+    </p>
 </body>
 
 </html>
