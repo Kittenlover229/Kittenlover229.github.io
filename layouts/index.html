@@ -12,7 +12,7 @@
 
     {{ range .Site.RegularPages }}
     <li>
-        <a href="{{.Permalink}}">{{.Date.Format "02/01/2006"}} | {{.Title}}</a>
+        <a href="{{.Permalink}}">{{.Date.Format "02/01/2006"}} | {{.Title}} ({{.WordCount}} words)</a>
     </li>
     {{ end }}
     </ul>

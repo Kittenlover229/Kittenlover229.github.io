@@ -24,7 +24,14 @@ a {
 
 @media screen and (max-width: 900px) {
     .title {
-        font-size: 75%;
+        font-size: 100%;
+    }
+
+    body {
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 5%;
+        font-size: 100%;
     }
 }
 
