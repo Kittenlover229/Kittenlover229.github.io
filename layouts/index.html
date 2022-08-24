@@ -8,11 +8,11 @@
 <body>
     <h1>{{ partial "title.html" }}</h1>
     <p>Programmer, proud Rust, C/C++ and Python3.x developer. Enjoy systems programming, programming language design,
-        philosophy and cooking. Open for job invitations.</p>
+    philosophy and cooking. Open for job invitations. While here consider getting acquainted with my recent writings shown below. You may also look at them by categories: <a href="/projects">projects</a>, <a href="/posts">posts</a>.</p>
 
     {{ range .Site.RegularPages }}
     <li>
-        <a href="{{.Permalink}}">{{.Date.Format "02/01/2006"}} | {{.Title}} ({{.WordCount}} words)</a>
+        <a href="{{.Permalink}}"><code>{{.Date.Format "02/01/2006"}} </code>{{.Title}} ({{.WordCount}} words)</a>
     </li>
     {{ end }}
     </ul>
