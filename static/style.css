@@ -10,6 +10,10 @@ a {
     text-decoration: none;
 }
 
+code {
+    font-family: "Computer Modern Typewriter", monospace;
+}
+
 @media screen and (min-width: 900px) {
     body {
         padding-left: 30%;
